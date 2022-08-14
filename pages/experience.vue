@@ -7,7 +7,7 @@
     </div>
 
     <div class="post content-box">
-      <Author class="post-author" :show-link="false" />
+      <Author class="post-author" :show-link="false" :show-author-image="true" />
       <div class="post__header">
         <img
           class="post-card__image"

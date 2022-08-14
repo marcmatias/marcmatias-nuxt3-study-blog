@@ -3,7 +3,7 @@
     <img
       alt="Author image"
       class="author__image"
-      src="/images/author.webp"
+      :src="showAuthorImage ? '/images/author.jpg' : '/images/avatar.webp'"
       width="180"
       height="180"
       blur="5"
@@ -92,6 +92,10 @@ defineProps({
     type: Boolean,
     default: true,
   },
+  showAuthorImage: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const author = {
@@ -114,9 +118,17 @@ const author = {
 
   &__image {
     border-radius: 100%;
-    width: 90px;
-    height: 90px;
-    margin-bottom: 1em;
+    width: 115px;
+    height: 115px;
+    margin-bottom: .5em;
+  }
+
+  // Make  things smaller for mobile
+  @media screen and (max-width: 650px) {
+    &__image {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__intro {

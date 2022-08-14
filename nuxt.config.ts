@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/x-icon",
-          href: "/images/author.webp",
+          href: "/images/avatar.webp",
         },
       ],
     },
