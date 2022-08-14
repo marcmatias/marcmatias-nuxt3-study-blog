@@ -1,5 +1,11 @@
 import { defineNuxtConfig } from "nuxt";
 
+const title = "Blog de marcmatias";
+const link = "https://marcmatias.github.io";
+const type = "Website";
+const image = link + `/images/author.webp`;
+const description = "Marcel Marques desenvolvedor de softwares, bacharel em Sistemas para Internet";
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   target: "static",
@@ -12,19 +18,21 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'pt-br'
+        lang: "pt-br",
       },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        {
-          hid: "description",
-          name: "description",
-          content: "Blog de marcmatias",
-        },
-        { property: "og:site_name", content: "Blog de marcmatias" },
-        { property: "og:url", content: "https://marcmatias.github.io" },
-        { property: "og:type", content: "Blog" },
+        { name: "title", content: title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:url", content: link },
+        { property: "og:type", content: type },
+        { property: "og:image", content: image },
+        { property: "twitter:title", content: title },
+        { property: "twitter:url", content: link },
+        { property: "twitter:type", content: type },
+        { property: "twitter:image", content: image },
       ],
       link: [
         {
@@ -38,8 +46,5 @@ export default defineNuxtConfig({
   css: [
     // SCSS file in the project
     "~/assets/scss/main.scss",
-  ],
-  generate: {
-    subFolders: false
-  }
+  ]
 });
