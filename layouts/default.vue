@@ -26,15 +26,12 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-
 defineProps({
   showLogo: {
     type: Boolean,
     default: true,
   },
 });
-
 </script>
 
 <style lang="scss">

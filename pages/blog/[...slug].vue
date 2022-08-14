@@ -1,35 +1,33 @@
 <template>
   <NuxtLayout>
-    <div>
-      <div class="post-title">
-        <h1 class="post-title__text">
-          {{ post.title }}
-        </h1>
+    <div class="post-title">
+      <h1 class="post-title__text">
+        {{ post.title }}
+      </h1>
 
-        <PostMeta :post="post" />
-      </div>
-
-      <div class="post content-box">
-        <div class="post__header">
-          <img
-            class="post-card__image"
-            v-if="post.coverImage"
-            :src="`/images/covers/${post.coverImage}`"
-            :alt="post.alt"
-          />
-        </div>
-
-        <ContentRenderer class="post__content" :value="post" />
-
-        <div class="post__footer">
-          <PostTags :post="post" />
-        </div>
-      </div>
-
-      <div class="post-comments"></div>
-
-      <Author class="post-author" />
+      <PostMeta :post="post" />
     </div>
+
+    <div class="post content-box">
+      <div class="post__header">
+        <img
+          class="post-card__image"
+          v-if="post.coverImage"
+          :src="`/images/covers/${post.coverImage}`"
+          :alt="post.alt"
+        />
+      </div>
+
+      <ContentRenderer class="post__content" :value="post" />
+
+      <div class="post__footer">
+        <PostTags :post="post" />
+      </div>
+    </div>
+
+    <div class="post-comments"></div>
+
+    <Author class="post-author" />
   </NuxtLayout>
 </template>
 
