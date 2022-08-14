@@ -19,9 +19,7 @@
           />
         </div>
 
-        <ClientOnly>
-          <ContentRenderer class="post__content" :value="post" />
-        </ClientOnly>
+        <ContentRenderer class="post__content" :value="post" />
 
         <div class="post__footer">
           <PostTags :post="post" />
