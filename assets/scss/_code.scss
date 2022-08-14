@@ -16,8 +16,7 @@ pre {
 }
 
 code {
-  font-size: 0.85em;
-  padding: 0.2em 0.5em;
+  font-size: 0.95em;
 }
 
 code,
@@ -49,7 +48,7 @@ pre {
 
 /* Code blocks */
 pre {
-  overflow: auto;
+  overflow-x: auto;
 }
 
 /* Inline code */
