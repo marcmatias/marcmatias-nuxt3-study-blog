@@ -1,5 +1,5 @@
 ---
-title: "Músicas"
+title: "Playlist musical"
 date: "2021-04-03"
 description: "Músicas que encontrei no youtube que vale a pena ser guardadas para ouvir mais vezes."
 tags: ["Música", "Entretenimento"]

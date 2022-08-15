@@ -1,5 +1,5 @@
 ---
-title: "Como atualizar fork com comando rebase"
+title: "Git: Atualizar fork com comando rebase"
 date: "2021-04-03"
 description: "Guia com os comandos necessários para atualizar o fork com comando rebase."
 tags: ["Git", "Programação"]
