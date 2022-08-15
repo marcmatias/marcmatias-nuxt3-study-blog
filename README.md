@@ -6,10 +6,12 @@ Minha página pessoal disponível em https://marcmatias.github.io
 
 **Tech used:** Nuxt 3, NuxtContent V2, Vue 3, HTML e SCSS
 
-Site desenvolvido utilizado como base a própria documentação do Nuxt e NuxtContent V2 e toma como base o tema do starter gridsome-blog-starter
+Site desenvolvido utilizado como base a própria documentação do Nuxt3 e NuxtContentV2 no tema o gridsome-blog-starter foi a referência
 
 ## Links relevantes:
 
-**Starter utilizado como base para base de tema:** https://gridsome.org/starters/gridsome-blog-starter/
+**Starter de referência para estilos:** https://gridsome.org/starters/gridsome-blog-starter/
 
 **Vuejs:** https://vuejs.org/
+
+**Nuxt3:** https://v3.nuxtjs.org/
