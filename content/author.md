@@ -2,8 +2,7 @@
 title: "Marcel Marques Matias"
 description: "Esta é a minha primeira postagem neste blog. Em breve trarei mais conteúdo para essa área da página."
 ---
-## Empresas
-Estágios/trabalhos
+## Experiências
 
 ### Fábrica de Software
 **Jan 2017 - Set 2018**

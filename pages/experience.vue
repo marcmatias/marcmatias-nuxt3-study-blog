@@ -1,11 +1,5 @@
 <template>
   <NuxtLayout>
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ post.title }}
-      </h1>
-    </div>
-
     <div class="post content-box">
       <Author class="post-author" :show-link="false" :show-author-image="true" />
       <div class="post__header">
@@ -30,13 +24,6 @@ const { data: post } = await useAsyncData(path, () => {
 </script>
 
 <style lang="scss">
-.post-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
-  max-width: 58rem;
-  margin: 0 auto;
-}
-
 .post {
   &__header {
     width: calc(100% + var(--space) * 2);
