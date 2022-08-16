@@ -9,10 +9,10 @@
       blur="5"
     />
 
-    <h1 class="author__site-title">{{ author.name }}</h1>
+    <h1 class="author__site-title">{{ runtimeConfig.author.name }}</h1>
 
     <p class="author__intro">
-      {{ author.bio }}
+      {{ runtimeConfig.author.bio }}
       <NuxtLink to="/experience" v-if="showLink" title="Clique e veja mais informações">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@
       </NuxtLink>
     </p>
 
-    <div v-if="author.social" class="author__buttons">
+    <div v-if="runtimeConfig.author.social" class="author__buttons">
       <a
-        v-if="author.social.codepen"
-        :href="author.social.codepen"
+        v-if="runtimeConfig.author.social.codepen"
+        :href="runtimeConfig.author.social.codepen"
         target="_blank"
         title="Codepen"
       >
@@ -48,8 +48,8 @@
         </svg>
       </a>
       <a
-        v-if="author.social.github"
-        :href="author.social.github"
+        v-if="runtimeConfig.author.social.github"
+        :href="runtimeConfig.author.social.github"
         target="_blank"
         title="Github"
       >
@@ -60,8 +60,8 @@
         </svg>
       </a>
       <a
-        v-if="author.social.linkedin"
-        :href="author.social.linkedin"
+        v-if="runtimeConfig.author.social.linkedin"
+        :href="runtimeConfig.author.social.linkedin"
         target="_blank"
         title="Linkedin"
       >
@@ -72,8 +72,8 @@
         </svg>
       </a>
       <a
-        v-if="author.social.twitter"
-        :href="author.social.twitter"
+        v-if="runtimeConfig.author.social.twitter"
+        :href="runtimeConfig.author.social.twitter"
         target="_blank"
         title="Twitter"
       >
@@ -87,6 +87,8 @@
   </div>
 </template>
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
+
 defineProps({
   showLink: {
     type: Boolean,
@@ -97,18 +99,8 @@ defineProps({
     default: false,
   },
 });
-
-const author = {
-  name: "@marcmatias",
-  social: {
-    codepen: "https://codepen.io/marcmatias",
-    linkedin: "https://www.linkedin.com/in/marcel-marques-836a04208",
-    github: "https://github.com/marcmatias",
-    twitter: "https://twitter.com/@marcmatias",
-  },
-  bio: "Marcel Marques desenvolvedor de softwares, bacharel em Sistemas para Internet",
-};
 </script>
+
 <style lang="scss">
 .author {
   margin: 0 auto;

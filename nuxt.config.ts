@@ -46,5 +46,21 @@ export default defineNuxtConfig({
   css: [
     // SCSS file in the project
     "~/assets/scss/main.scss",
-  ]
+  ],
+  runtimeConfig: {
+    // The private keys which are only available within server-side
+    public: {
+      projectGitUrl: 'https://github.com/marcmatias/marcmatias.github.io',
+      author: {
+        name: "@marcmatias",
+        social: {
+          codepen: "https://codepen.io/marcmatias",
+          linkedin: "https://www.linkedin.com/in/marcel-marques-836a04208",
+          github: "https://github.com/marcmatias",
+          twitter: "https://twitter.com/@marcmatias",
+        },
+        bio: "Marcel Marques desenvolvedor de softwares, bacharel em Sistemas para Internet",
+      }
+    }
+  }
 });
