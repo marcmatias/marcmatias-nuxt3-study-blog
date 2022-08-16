@@ -7,9 +7,9 @@ coverImage: "three.jpg"
 alt: "three"
 ---
 
-Atualizando fork com rebase
+#### Guia de atualização
 
-_Guia com os comandos necessários para atualizar o fork com comando rebase._
+Atualizar fork com rebase pode ser um processo confuso, fiz esse guia com a finalidade de relembrar os passos necessários para fazer a atualização.
 
 1. Set o upstream caso já não o tenha setado
 

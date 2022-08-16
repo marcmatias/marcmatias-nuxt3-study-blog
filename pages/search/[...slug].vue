@@ -52,7 +52,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .search-input {
   padding: 0.5rem;
   margin: 1rem 0.5rem 3rem;

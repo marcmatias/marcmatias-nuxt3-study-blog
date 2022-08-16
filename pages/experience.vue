@@ -23,7 +23,7 @@ const { data: post } = await useAsyncData(path, () => {
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .post {
   &__header {
     width: calc(100% + var(--space) * 2);
@@ -44,14 +44,6 @@ const { data: post } = await useAsyncData(path, () => {
 
   &__content {
     padding-bottom: 1rem;
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
 
     img {
       width: calc(100% + var(--space) * 2);
