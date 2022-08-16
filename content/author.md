@@ -2,6 +2,20 @@
 title: "Marcel Marques Matias"
 description: "Esta é a minha primeira postagem neste blog. Em breve trarei mais conteúdo para essa área da página."
 ---
+
+## Qualificações
+
+### Programação para Internet (PHP MYSQL)
+**Nov 2008 - Dez 2008**
+
+O curso foi concedido pelo Serviço Nacional de Aprendizagem Comercial - PB, SENAC, Brasil e teve em seu componente curricular a teoria e prática profissional no desenvovlimento de sistemas com PHP na lógica e interface do projeto e Mysql em sua base de dados.
+
+### Bacharel Sistemas Para Internet
+**Jan 2017 - Jul 2019**
+
+O curso ocorrido no  Centro Universitário de João Pessoa - UNIPÊ, buscou equilibrar as habilidades técnicas(hard-skills) com as socioemocionais (soft skills), permitindo o desenvolvimento de competências que envolvem criatividade, colaboração, resolução de problemas, pensamento crítico, comunicação, liderança, entre outras. Nesse sentido, possibilitou o desenvolvimento de plataformas tecnológicas que suportem processo de transformação digital do mercado e apresente boa adequação as suas necessidades.
+
+
 ## Experiências
 
 ### Fábrica de Software
@@ -28,6 +42,7 @@ Estagiário em desenvolvimento de testes automatizados de interface e usabilidad
 Tecnologias mais utilizadas
 * Java
 * Selenium
+* Redmine
 
 ### Pythonic Café
 **Nov 2021 - atual**
@@ -45,12 +60,3 @@ Tecnologias mais utilizadas
 * Bootstrap
 * Materialize
 * Pandas
-
-## Qualificações
-
-### Bacharel Sistemas Para Internet
-**Jan 2017 - Jul/2019**
-
-UNIPÊ - Centro Universitário de João Pessoa
-
-O curso buscou equilibrar as habilidades técnicas(hard-skills) com as socioemocionais (soft skills), permitindo o desenvolvimento de competências que envolvem criatividade, colaboração, resolução de problemas, pensamento crítico, comunicação, liderança, entre outras. Nesse sentido, possibilitou o desenvolvimento de plataformas tecnológicas que suportem processo de transformação digital do mercado e apresente boa adequação as suas necessidades.
