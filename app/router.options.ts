@@ -2,36 +2,21 @@ import type { RouterConfig } from "@nuxt/schema";
 
 // https://router.vuejs.org/api/#routeroptions
 export default <RouterConfig>{
-  scrollBehavior(to, _, savedPosition) {
-    const nuxtApp = useNuxtApp();
-
-    // If history back
-    if (savedPosition) {
-      // Handle Suspense resolution
-      return new Promise((resolve) => {
-        nuxtApp.hooks.hookOnce("page:finish", () => {
-          setTimeout(() => resolve(savedPosition), 50);
-        });
-      });
-    }
-
-    // Scroll to heading on click
-    if (to.hash) {
+  scrollBehavior(to, _from, savedPosition) {
+    return new Promise((resolve, _reject) => {
       setTimeout(() => {
-        const heading = document.querySelector(to.hash) as any;
-
-        return window.scrollTo({
-          top: heading.offsetTop,
-          behavior: "smooth",
-        });
-      });
-      return;
-    }
-
-    // Scroll to top of window
-    return new Promise((res, rej) => {
-      setTimeout(() => {
-        res({ top: 0 });
+        if (savedPosition) {
+          resolve(savedPosition);
+        } else {
+          if (to.hash) {
+            resolve({
+              el: to.hash,
+              top: 80,
+            });
+          } else {
+            resolve({ top: 0 });
+          }
+        }
       }, 300);
     });
   },
