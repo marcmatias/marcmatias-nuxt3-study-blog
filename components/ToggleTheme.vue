@@ -75,6 +75,11 @@
         </svg>
       </button>
     </NuxtLink> -->
+    <NuxtLink to="/project" class="bg-transparent">
+      <button role="button" class="nav-buttons">
+        Projetos
+      </button>
+    </NuxtLink>
   </div>
 </template>
 
@@ -121,6 +126,8 @@ export default {
   @extend .bg-transparent;
   border: 0;
   color: var(--body-color);
+  font-weight: 700;
+  padding-top: 0.5rem;
   cursor: pointer;
 
   &__reticence {
