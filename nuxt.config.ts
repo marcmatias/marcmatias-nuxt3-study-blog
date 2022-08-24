@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         name: "@marcmatias",
         social: {
           codepen: "https://codepen.io/marcmatias",
-          linkedin: "https://www.linkedin.com/in/marcel-marques-836a04208",
+          linkedin: "https://www.linkedin.com/in/marcmatias",
           github: "https://github.com/marcmatias",
           twitter: "https://twitter.com/@marcmatias",
         },
