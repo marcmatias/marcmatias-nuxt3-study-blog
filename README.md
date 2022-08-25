@@ -15,3 +15,5 @@ Site desenvolvido utilizado como base a própria documentação do Nuxt3 e NuxtC
 **Vuejs:** https://vuejs.org/
 
 **Nuxt3:** https://v3.nuxtjs.org/
+
+**NuxtContentv2**: https://content.nuxtjs.org/
