@@ -11,4 +11,3 @@ Um projeto simples para ativação de ações em tabelas HTML sem a necessidade 
 ## Links
 
 * [Github](https://github.com/marcmatias/table-actions)
-* [Demonstração](https://marcmatias.github.io/table-actions/)
